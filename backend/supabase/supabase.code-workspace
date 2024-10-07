@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "project-root",
+      "path": "./"
+    },
+    {
+      "name": "supabase-functions",
+      "path": "./functions"
+    }
+  ],
+  "settings": {
+    "deno.enable": true,
+    "deno.lint": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "deno.importMap": "./import_map.json",
+    "files.exclude": {
+      "supabase/functions/": true
+    },
+    "deno.unstable": true
+  }
+}

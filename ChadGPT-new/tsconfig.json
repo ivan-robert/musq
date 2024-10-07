@@ -1,0 +1,32 @@
+{
+  "extends": "expo/tsconfig.base",
+  "exclude": ["app.config.ts"],
+  "include": [
+    "src/**/*.json",
+    "jest/**/*",
+    "*.tsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "./src/modules/**/*",
+    "./src/shared/**/*",
+    "./src/navigation/**/*",
+    "./src/theme/**/*",
+    "./src/app/**/*",
+    "__mocks__/react-native-safe-area-context.tsx",
+    "eslint.config.js"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "composite": true,
+    "noEmit": true,
+    "baseUrl": "./",
+    "paths": {
+      "#assets/*": ["assets/*"],
+      "#modules/*": ["src/modules/*"],
+      "#shared/*": ["src/shared/*"],
+      "#navigation/*": ["src/navigation/*"],
+      "#theme/*": ["src/theme/*"],
+      "#app/*": ["src/app/*"]
+    }
+  }
+}

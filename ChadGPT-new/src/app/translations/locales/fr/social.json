@@ -1,0 +1,18 @@
+{
+  "follow": "Suivre",
+  "followed": "Suivi(e)",
+  "errorWhenFollowing": "Une erreur est survenue en s'abonnant à cet utilisateur",
+  "comments": {
+    "title": "Commentaires",
+    "showReplies": "Afficher les réponses ({{count}})",
+    "hideReplies": "Masquer les réponses",
+    "reply": "répondre"
+  },
+  "usersFollowed": "Utilisateurs suivis",
+  "feed": {
+    "feedEmpty": "Votre feed est vide",
+    "addWorkout": "Créer une séance",
+    "findFriends": "Ajouter des amis"
+  },
+  "noUsersFollowed": "Aucun utilisateur suivi"
+}

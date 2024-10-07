@@ -1,0 +1,19 @@
+{
+  "imports": {
+    "@zod": "https://deno.land/x/zod@v3.22.4/mod.ts",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.1",
+    "@testing-library": "https://deno.land/std@0.218.2/testing/bdd.ts",
+    "@axiod": "https://deno.land/x/axiod@0.26.2/mod.ts",
+    "@lodash": "https://deno.land/x/lodash@4.17.15-es/lodash.js",
+    "@type-fest": "https://deno.land/x/fest@4.13.2/mod.ts",
+    "@assert": "https://deno.land/std@0.220.0/assert/mod.ts",
+    "@spyMocks": "https://deno.land/std@0.220.0/testing/mock.ts",
+    "@clerk": "npm:@clerk/clerk-sdk-node",
+    "@clerk/backend": "npm:@clerk/backend",
+    "@aws-s3": "npm:@aws-sdk/client-s3",
+    "@aws-s3-presigner": "npm:@aws-sdk/s3-request-presigner",
+    "@djwt": "https://deno.land/x/djwt@v2.8/mod.ts",
+    "#functions/": "./functions/",
+    "#shared/": "./functions/shared/"
+  }
+}

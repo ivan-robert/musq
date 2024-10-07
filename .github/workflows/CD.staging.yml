@@ -1,0 +1,40 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches: [staging]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: "1.0.4"
+
+      - name: Install dependencies
+        run: bun install
+        working-directory: ./ChadGPT-new
+
+      - name: Setup Expo
+        uses: expo/expo-github-action@v8
+        with:
+          expo-version: latest
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Update preview
+        run: eas update --auto --non-interactive
+        working-directory: ./ChadGPT-new
+        env:
+          ENVIRONMENT: ${{ github.ref_name }}
+          SUPABASE_URL: ${{ secrets.STAGING_URL }}
+          SUPABASE_KEY: ${{ secrets.STAGING_KEY }}
+          BASE_EXERCISE_URL: ${{ secrets.BASE_EXERCISE_URL }}
+          EXERCISE_API_KEY: ${{ secrets.EXERCISE_API_KEY }}
+          EXERCISE_API_HOST: ${{ secrets.EXERCISE_API_HOST }}

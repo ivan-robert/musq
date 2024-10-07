@@ -1,0 +1,40 @@
+{
+  "common": {
+    "monthRecap": "Your <bold>month recap</bold>",
+    "yourGrowth": "Your growth",
+    "statsByExercise": "<white>Stats by <orange>exercise</orange></white>",
+    "chooseExercise": "Choose an exercise"
+  },
+  "monthRecap": {
+    "trainedMuscles": "muscles trained",
+    "sinceLastMonth": "since last month",
+    "muscleRepartition": "Muscles trained",
+    "spentTraining": "spent training",
+    "thisMonth": "This month, you did...",
+    "workouts": "workouts",
+    "withTotal": "with a total of",
+    "soOnAverage": "So on average",
+    "perWorkout": "per workout",
+    "yourMonthRecap": "This month",
+    "ofTraining": "of training",
+    "youHaveNotTrained": "You have not trained this month",
+    "startWorkout": "Start a workout"
+  },
+  "exerciseStats": {
+    "chooseAnother": "Choose another",
+    "exercise": "exercise",
+    "displayIntensity": "Display intensity",
+    "displayFailures": "Display failures",
+    "totalVolume": "Total volume:",
+    "PR": "PR:",
+    "averageIntensity": "Average intensity:",
+    "averageRest": "Average rest:",
+    "numberOfFailures": "Number of failures:",
+    "numberOfNewPRs": "Number of new PRs:",
+    "oneWeek": "1 week",
+    "oneMonth": "1 month",
+    "oneYear": "1 year",
+    "noData": "No data available for this timeframe",
+    "statisticsForThisTimeframe": "Statistics for this timeframe"
+  }
+}

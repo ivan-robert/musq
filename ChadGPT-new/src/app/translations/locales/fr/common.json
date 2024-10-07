@@ -1,0 +1,63 @@
+{
+  "greetings": {
+    "welcome": "<white>Bienvenue <orange>{{name}}</orange></white>",
+    "yourLastWorkouts": "Derniers posts :"
+  },
+  "actions": {
+    "cancel": "Annuler",
+    "send": "Envoyer",
+    "submit": "Valider"
+  },
+  "status": {
+    "error": "Erreur",
+    "information": "Information",
+    "networkError": "Une erreur est survenue. Veuillez réessayer ultérieurement.",
+    "success": "Succès"
+  },
+  "authentication": {
+    "login": "Connexion",
+    "performLogin": "Se connecter",
+    "email": "email",
+    "password": "mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "createAccount": "Créer un compte",
+    "validation": {
+      "invalidEmail": "Email invalide",
+      "eightCharacters": "Au moins 8 caractères",
+      "oneNumber": "Au moins un chiffre",
+      "capLetter": "Au moins une majuscule et une minuscule"
+    },
+    "confirmPassword": "confirmer le mot de passe",
+    "passwordMismatch": "Les mots de passes ne correspondent pas",
+    "userAlreadyExists": "Cet utilisateur existe déjà",
+    "registerUnknownError": "Une erreur est survenue lors de votre inscription. Veuillez réessayer plus tard.",
+    "wrongCredentials": "Identifiants incorrects",
+    "resetPassword": "Réinitialiser le mot de passe",
+    "privacyPolicy": "En continuant, vous acceptez notre <privacyPolicy>politique de confidentialité</privacyPolicy> and <termsOfService>conditions d'utilisation</termsOfService>.",
+    "signupConfirmation": {
+      "title": "Bienvenue à bord !",
+      "message": "Nous t'avons envoyé un mail pour activer ton compte.\n Vérifie ta boîte de réception",
+      "sendAgain": "Envoyer de nouveau",
+      "goBackToLogin": "Retour à la page de connexion",
+      "checkInbox": "Vérifie ta boîte mail"
+    },
+    "anErrorOccurred": "Une erreur est survenue",
+    "resetPasswordInstructions": "Entrez votre adresse email pour recevoir un lien de réinitialisation de votre mot de passe",
+    "or": "ou",
+    "errorWhileGoogleLogin": "Une erreur est survenue lors de la connexion avec Google"
+  },
+  "home": "Menu",
+  "notifications": {
+    "notifications": "Notifications",
+    "noNotifications": "Aucune notification",
+    "timeAgo": {
+      "seconds": "{{count}}s",
+      "minutes": "{{count}}min",
+      "hours": "{{count}}h",
+      "days": "{{count}}j",
+      "weeks": "{{count}}sem",
+      "months": "{{count}}m",
+      "years": "{{count}}a"
+    }
+  }
+}

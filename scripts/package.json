@@ -1,0 +1,16 @@
+{
+  "name": "scripts",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.43.2",
+    "axios": "^1.6.8",
+    "supabase": "^1.167.4"
+  }
+}

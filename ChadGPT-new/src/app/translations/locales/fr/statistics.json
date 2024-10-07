@@ -1,0 +1,40 @@
+{
+  "common": {
+    "monthRecap": "Ton <bold>récap du mois</bold>",
+    "yourGrowth": "Ta progression",
+    "statsByExercise": "<white>Statistiques par <orange>exercice</orange></white>",
+    "chooseExercise": "Choisissez un exercice"
+  },
+  "monthRecap": {
+    "trainedMuscles": "muscles entraînés",
+    "sinceLastMonth": "depuis le mois dernier",
+    "muscleRepartition": "Répartition musculaire",
+    "spentTraining": "temps passé à s'entraîner",
+    "thisMonth": "Ce mois-ci, c'est...",
+    "workouts": "séances d'entraînement",
+    "withTotal": "avec un total de",
+    "soOnAverage": "soit en moyenne",
+    "perWorkout": "par séance d'entraînement",
+    "ofTraining": "d'entraînement",
+    "yourMonthRecap": "Ton récap du mois",
+    "youHaveNotTrained": "Tu n'as pas encore fait de séance ce mois-ci",
+    "startWorkout": "Ajouter une séance"
+  },
+  "exerciseStats": {
+    "chooseAnother": "Choisissez un autre",
+    "exercise": "exercice",
+    "displayIntensity": "Afficher l'intensité",
+    "displayFailures": "Afficher les échecs",
+    "totalVolume": "Volume total :",
+    "PR": "RP :",
+    "averageIntensity": "Intensité moyenne :",
+    "averageRest": "Repos moyen :",
+    "numberOfFailures": "Nombre d'échecs :",
+    "numberOfNewPRs": "Nombre de nouveaux RP :",
+    "oneWeek": "1 semaine",
+    "oneMonth": "1 mois",
+    "oneYear": "1 an",
+    "noData": "Aucune donnée disponible pour cette période",
+    "statisticsForThisTimeframe": "Statistiques pour cette période"
+  }
+}

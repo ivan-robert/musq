@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "count-lines": "git ls-files | grep 'functions' | grep -E '.ts$|.tsx$' | grep -vE '.ttf$|.otf$' | xargs wc -",
+    "cache-import-deps": "deno run --allow-read --allow-run cache_import_map.js",
+    "cache-file-deps": "bash cache_all_file_deps.sh",
+    "tsc": "bash tsc.sh",
+    "gen-types": "supabase gen types typescript --project-id zgcbomyifrhcuqjcpjhr > functions/shared/infra/types/db/database.types.ts",
+    "serve": "supabase functions serve --env-file supabase/env/.env.local --import-map supabase/import_map.json",
+    "deploy": "supabase functions deploy --import-map supabase/import_map.json",
+    "reset": "supabase db reset",
+    "diff": "supabase db diff -f initial_structure --linked",
+    "dump": "supabase db dump --data-only -f supabase/seed.sql",
+    "status": "supabase status",
+    "push-staging-secrets": "supabase secrets set --env-file supabase/env/.env.staging",
+    "push-prod-secrets": "supabase secrets set --env-file supabase/env/.env.prod",
+    "update-db": "yarn diff && yarn dump && yarn reset",
+    "setup-tests": "deno test --import-map import_map.json --allow-net=127.0.0.1:54321 --allow-env --allow-read __test__/setup.test.ts",
+    "run-file": "deno run --import-map import_map.json --allow-net=127.0.0.1:54321 --allow-env --allow-read",
+    "test": "deno test --import-map import_map.json --allow-net=127.0.0.1:54321 --allow-env --env",
+    "get-test-coverage": "rm -rf coverage && yarn test --coverage=coverage && deno coverage coverage --html",
+    "testwlogs": "TEST_MODE=verbose deno test --import-map import_map.json --allow-net=127.0.0.1:54321 --allow-env"
+  },
+  "dependencies": {
+    "react-native-confirmation-code-field": "^7.4.0"
+  }
+}

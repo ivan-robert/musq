@@ -1,0 +1,11 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.ivanrobert.ChadGPTnew",
+        "sha256_cert_fingerprints":
+          ["48:F0:07:E5:E6:12:1F:0F:0E:3B:FF:73:E0:FB:B2:71:D2:D3:15:90:22:46:8E:B0:67:4C:0E:9F:95:A8:28:20"]
+      }
+    }
+  ]

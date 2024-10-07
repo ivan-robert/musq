@@ -1,0 +1,40 @@
+{
+  "settings": {
+    "buttons": {
+      "myAccount": "Mon Compte",
+      "contactSupport": "Contacter le Support",
+      "chooseLanguage": "Choisir la Langue",
+      "logout": "Déconnexion"
+    },
+    "support": "Support",
+    "yourProblem": "Votre problème ou suggestion",
+    "problemDetails": "Plus de détails",
+    "problemName": "Donnez un nom à votre problème",
+    "problemDescription": "Décrivez votre problème en détail",
+    "supportChannelCreationInfo": "Un canal de support pour vous aider sera créé, et nos équipes vous répondront au plus vite.",
+    "changeLanguage": "Changer la langue",
+    "myAccount": "Mon Compte",
+    "deleteAccountWarning": "Es-tu sur(e) de vouloir supprimer ton compte ?\n<red>Cette action est irréversible.</red>",
+    "toConfirmEnterMail": "Pour confirmer ton choix, entre ton adresse mail",
+    "byebye": "Bye bye!",
+    "yourAccountHasBeenDeleted": "Ton compte a été supprimé avec succès.",
+    "deleteAccount": "Supprimer le compte",
+    "noIssueOpen": "Vous n'avez pas de canal ouvert",
+    "openIssue": "Contacter le support",
+    "theme": "Thème",
+    "appVersion": "Version de l'application: {{version}}"
+  },
+  "author": "<bold>{{author}} : </bold>",
+  "you": "Vous",
+  "me": "Moi",
+  "addExo": {
+    "title": "Ajouter votre exercice",
+    "visibleByYou": "Cet exercice ne sera visible que par vous",
+    "equipment": "Matériel",
+    "mainMuscle": "Muscle principal"
+  },
+  "chooseUsername": "Choisir un nom d'utilisateur",
+  "chooseUsernameDescription": "Comment veux-tu que l'on t'appelle ?",
+  "yourUsername": "Ton pseudo",
+  "searchUser": "Trouve tes amis"
+}

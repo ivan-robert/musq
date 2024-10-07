@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "D4VJDU3T5B.com.fitrat.fitrat",
+        "paths": ["/*"]
+      }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": ["D4VJDU3T5B.com.fitrat.fitrat"]
+  },
+  "webcredentials": {
+    "apps": ["D4VJDU3T5B.com.fitrat.fitrat"]
+  }
+}

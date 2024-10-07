@@ -1,0 +1,60 @@
+name: Continuous Integration for backend
+
+on:
+  pull_request:
+  push:
+    branches: [development, staging, production]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Sets up Supabase CLI
+      - name: Setup supabase
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      # Sets up deno
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.41.3  
+      
+      
+      # Import yarn dependencies from cache
+      - name: Import dependencies
+        run: yarn cache-import-deps
+        working-directory: backend/supabase
+
+      - name: typescript checks
+        run: yarn tsc
+        working-directory: backend/supabase
+
+        # TEST SECTION For now deactivated cuz uncaught exceptions and env variables for logs missing
+
+        # Starts a local Supabase instance
+      # - name: Start local Supabase
+      #   run: supabase start
+      #   working-directory: backend/supabase
+        
+        # Setup tests (e.g., database seeding, config settings). 
+      # - name: Setup tests
+      #   run: yarn setup-tests
+      #   working-directory: backend/supabase
+
+
+      # # Start local supabase edge functions
+      # - name: Start local supabase edge functions
+      #   run: |
+      #     yarn serve &
+      #     sleep 10
+      #   working-directory: backend/supabase
+        
+      
+      # # Run tests
+      # - name: Run tests
+      #   run: yarn test
+      #   working-directory: backend/supabase

@@ -1,0 +1,3 @@
+export const SAVE_SEANCE_KEY = "SAVE SEANCE";
+
+export const RETRIEVE_SEANCE_KEY = "RETRIEVE_SEANCE";

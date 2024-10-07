@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fitrat.fitrat",
+      "sha256_cert_fingerprints": [
+        "8E:A4:80:82:80:B2:F8:FA:D3:CB:D0:65:72:B7:91:37:CE:42:76:89:24:09:D3:DA:88:51:3B:79:C1:C8:5F:7E",
+        "0A:7D:43:D9:7C:35:CF:5E:A9:54:E5:AF:4D:2E:E2:62:CA:DC:EE:1E:7E:E0:D0:37:D6:E0:26:B2:75:87:DE:1F"
+      ]
+    }
+  }
+]

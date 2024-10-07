@@ -1,0 +1,6 @@
+{
+    "references": [
+    { "path": "ChadGPT-new/tsconfig.json" },
+    { "path": "backend/tsconfig.json" }
+]
+}

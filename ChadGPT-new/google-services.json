@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "953495926512",
+    "project_id": "chadgpt-71859",
+    "storage_bucket": "chadgpt-71859.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953495926512:android:61c1ac247db119e072b435",
+        "android_client_info": {
+          "package_name": "com.fitrat.fitrat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953495926512-am3p4f9qc0a4h6lkf9ms73skro4rvi9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9nDQnvB9ziA06dPb7CLTLYTTQFT8AQvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953495926512-am3p4f9qc0a4h6lkf9ms73skro4rvi9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953495926512:android:26e49ab748aa26ab72b435",
+        "android_client_info": {
+          "package_name": "com.ivanrobert.ChadGPTnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953495926512-am3p4f9qc0a4h6lkf9ms73skro4rvi9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9nDQnvB9ziA06dPb7CLTLYTTQFT8AQvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953495926512-am3p4f9qc0a4h6lkf9ms73skro4rvi9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

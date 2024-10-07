@@ -1,0 +1,40 @@
+{
+  "settings": {
+    "appVersion": "App version: {{version}}",
+    "theme": "Theme",
+    "noIssueOpen": "You have no open issues",
+    "openIssue": "Open new issue",
+    "myAccount": "My Account",
+    "deleteAccount": "Delete Account",
+    "deleteAccountWarning": "Are you sure you want to delete your account?\n<red>This action is irreversible.</red>",
+    "toConfirmEnterMail": "To confirm, please enter your email address",
+    "byebye": "Bye bye!",
+    "yourAccountHasBeenDeleted": "Your account has been deleted successfully.",
+    "changeLanguage": "Change language",
+    "buttons": {
+      "myAccount": "Account",
+      "contactSupport": "Contact Support",
+      "chooseLanguage": "Choose Language",
+      "logout": "Logout"
+    },
+    "support": "Support",
+    "yourProblem": "Your problem or suggestion",
+    "problemDetails": "More details about your problem",
+    "problemName": "Give a name to your problem",
+    "problemDescription": "Describe your problem in more details",
+    "supportChannelCreationInfo": "We will create a support channel for you and our support team will be in touch with you shortly."
+  },
+  "author": "<bold>{{author}}: </bold>",
+  "you": "You",
+  "me": "Me",
+  "addExo": {
+    "title": "Enter your exercise",
+    "visibleByYou": "This exercise will only be accessible by you",
+    "equipment": "Equipment",
+    "mainMuscle": "Main muscle"
+  },
+  "chooseUsername": "Choose a username",
+  "chooseUsernameDescription": "How do you want us to call you?",
+  "yourUsername": "Your username",
+  "searchUser": "Find your friends"
+}

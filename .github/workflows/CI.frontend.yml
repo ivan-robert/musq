@@ -1,0 +1,38 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+  push:
+    branches: [development, staging, production]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: 1.0.4
+
+      - name: Install dependencies
+        run: bun install
+        working-directory: ./ChadGPT-new
+
+      - name: Check translations
+        run: bun run checkTranslations
+        working-directory: ./ChadGPT-new
+
+      - name: Types
+        run: bun run tsc
+        working-directory: ./ChadGPT-new
+
+      - name: Lint
+        run: bun run lint
+        working-directory: ./ChadGPT-new
+
+      - name: Test
+        run: bun run test
+        working-directory: ./ChadGPT-new

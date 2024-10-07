@@ -1,0 +1,18 @@
+{
+  "follow": "follow",
+  "followed": "followed",
+  "usersFollowed": "Followed users",
+  "noUsersFollowed": "No users followed",
+  "errorWhenFollowing": "Error when attempting to follow user",
+  "comments": {
+    "title": "Comments",
+    "showReplies": "Show replies ({{count}})",
+    "hideReplies": "Hide replies",
+    "reply": "reply"
+  },
+  "feed": {
+    "feedEmpty": "Your feed is empty",
+    "addWorkout": "Add a workout",
+    "findFriends": "Find friends"
+  }
+}

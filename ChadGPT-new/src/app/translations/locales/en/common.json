@@ -1,0 +1,63 @@
+{
+  "greetings": {
+    "welcome": "<white>Welcome <orange>{{name}}</orange></white>",
+    "yourLastWorkouts": "Latest posts:"
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "send": "Send",
+    "submit": "Submit"
+  },
+  "status": {
+    "error": "Error",
+    "success": "Success",
+    "information": "Information",
+    "networkError": "An error occurred while trying to connect to the server. Please try again later."
+  },
+  "authentication": {
+    "or": "or",
+    "validation": {
+      "invalidEmail": "Invalid email",
+      "eightCharacters": "At least 8 characters",
+      "oneNumber": "At least one number",
+      "capLetter": "At least one capital letter and one lowercase letter"
+    },
+    "signupConfirmation": {
+      "title": "Welcome aboard!",
+      "message": "We've sent you an email to activate your account.\n Please check your inbox",
+      "sendAgain": "Send again",
+      "goBackToLogin": "Go back to login",
+      "checkInbox": "Please check your inbox"
+    },
+    "errorWhileGoogleLogin": "An error occurred while trying to log in with Google. Please try again later.",
+    "anErrorOccurred": "An error occurred",
+    "login": "Login",
+    "performLogin": "Log in",
+    "email": "email",
+    "password": "password",
+    "confirmPassword": "confirm password",
+    "passwordMismatch": "Passwords don't match",
+    "forgotPassword": "Forgot password?",
+    "createAccount": "Create Account",
+    "userAlreadyExists": "User already exists",
+    "registerUnknownError": "Could not register your account. Please try again later.",
+    "wrongCredentials": "Wrong credentials",
+    "resetPassword": "Reset password",
+    "resetPasswordInstructions": "Enter your email address and we'll send you a link to reset your password",
+    "privacyPolicy": "By continuing, you agree to our <privacyPolicy>Privacy Policy</privacyPolicy> and <termsOfService>Terms of Service</termsOfService>."
+  },
+  "notifications": {
+    "notifications": "Notifications",
+    "noNotifications": "You have no notifications",
+    "timeAgo": {
+      "seconds": "{{count}}s",
+      "minutes": "{{count}}min",
+      "hours": "{{count}}h",
+      "days": "{{count}}d",
+      "weeks": "{{count}}w",
+      "months": "{{count}}m",
+      "years": "{{count}}y"
+    }
+  },
+  "home": "Home"
+}
