@@ -3,6 +3,7 @@ name: Populate Exercises
 on:
   schedule:
     - cron: '1 18 * * *' # Runs at 12:01 PM CST (Central Standard Time)
+    - cron: '0 4 * * *'
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
