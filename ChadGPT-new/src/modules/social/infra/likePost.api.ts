@@ -11,15 +11,11 @@ export const likePostAPI = async (
     .eq("user_clerk_id", userId)
     .eq("post_id", postId);
 
-  console.log("DATA", data);
-
   if (data && !data.length) {
-    const yaya = await supabaseClient
+    await supabaseClient
       .from("likes")
       .insert([{ user_clerk_id: userId, post_id: postId }])
       .select();
-
-    console.log("YAAY", yaya);
   }
 
   return postId;

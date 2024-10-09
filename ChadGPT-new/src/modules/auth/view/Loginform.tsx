@@ -17,10 +17,11 @@ import { featureFlags } from "#app/featureFlags";
 import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { UnauthenticatedNavigatorStackParamList } from "#navigation/Unauthenticated/unauthenticatedNavigator.types";
 import { GoogleButton } from "#shared/view/components/Google/GoogleSignInButton";
-import { useSignIn } from "@clerk/clerk-expo";
+import { isClerkAPIResponseError, useSignIn } from "@clerk/clerk-expo";
 import { Credentials } from "#modules/auth/domain/login.types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { credentialsSchema } from "#modules/auth/infra/login.validator";
+import { ToastService } from "#shared/service/Toast.service";
 
 type LoginFormProps = {
   onCreateAccountPress: () => void;
@@ -61,13 +62,15 @@ export const LoginForm = ({ onCreateAccountPress }: LoginFormProps) => {
 
       if (signInAttempt.status === "complete") {
         await setActive({ session: signInAttempt.createdSessionId });
-      } else {
-        // See https://clerk.com/docs/custom-flows/error-handling
-        // for more info on error handling
-        console.error(JSON.stringify(signInAttempt, null, 2));
       }
-    } catch (err: any) {
-      console.error(JSON.stringify(err, null, 2));
+    } catch (err) {
+      if (isClerkAPIResponseError(err)) {
+        ToastService.show({
+          type: "error",
+          title: "Error",
+          message: "invalid credentials",
+        });
+      }
     }
     setIsSigningIn(false);
   }, [isLoaded, signIn, email, password, setActive]);

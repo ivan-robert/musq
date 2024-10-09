@@ -46,7 +46,7 @@ export const ConfirmSignupPage: React.FC = () => {
           message: t("status.networkError"),
         });
       });
-  }, [params.email, t]);
+  }, [params.email, supabaseClient.auth, t]);
 
   return (
     <PageTemplate>

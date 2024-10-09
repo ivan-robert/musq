@@ -22,8 +22,6 @@ export const PublicProfile: React.FC<Props> = ({ user_id }) => {
   const { user: selfUser } = useUserContext();
   const { data: user } = usePublicUser(user_id);
 
-  console.log("user", user);
-
   return (
     <Container>
       <Avatar rounded size={64} source={{ uri: user.profilePictureURL }} />

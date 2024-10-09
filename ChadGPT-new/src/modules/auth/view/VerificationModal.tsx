@@ -58,13 +58,11 @@ export const VerificationModal: React.FC<Props> = ({
 
       if (completeSignUp.status === "complete") {
         await setActive({ session: completeSignUp.createdSessionId });
-      } else {
-        console.error(JSON.stringify(completeSignUp, null, 2));
       }
     } catch (err: unknown) {
       // See https://clerk.com/docs/custom-flows/error-handling
       // for more info on error handling
-      console.error(JSON.stringify(err, null, 2));
+
       if (isClerkAPIResponseError(err)) {
         setClerkErrors(err.errors.map((e) => e.longMessage ?? e.message));
       }

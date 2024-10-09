@@ -10,7 +10,6 @@ export const callEdgeFunction = async <T>(
   name: string,
   options?: FunctionInvokeOptions
 ): Promise<FunctionsResponse<T>> => {
-  console.log("CALLING EDGE FUNCTION", name);
   const yo = await supabaseClient.functions.invoke(name, {
     ...options,
   });

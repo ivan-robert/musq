@@ -27,7 +27,7 @@ export const usePostWorkout = () => {
         workoutData,
         i18next.language
       );
-      console.log("data", data, "error", error);
+
       if (error || !data) {
         throw new Error("Error while posting workout");
       }
@@ -50,7 +50,7 @@ export const usePostWorkout = () => {
           title: "Error",
           message: "Error while uploading images",
         });
-        console.log("error", e);
+
         await callEdgeFunction(
           supabaseClient,
           axios.getUri({
@@ -82,17 +82,11 @@ const uploadIllustration = async ({
   folder: string;
   file_name: string;
 }) => {
-  try {
-    const result = await s3.put({
-      local_uri: localUri,
-      bucket_key: `${folder}/${file_name}`,
-      type: "image/jpeg",
-    });
+  const result = await s3.put({
+    local_uri: localUri,
+    bucket_key: `${folder}/${file_name}`,
+    type: "image/jpeg",
+  });
 
-    console.log("Upload successful:", result);
-    return result;
-  } catch (error) {
-    console.error("Error uploading image:", error);
-    throw error;
-  }
+  return result;
 };

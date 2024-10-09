@@ -40,6 +40,7 @@ const FeedHeader = () => {
 
   useEffect(() => {
     NotificationsService.registerForPushNotifications(supabaseClient);
+    // eslint-disable-next-line
   }, []);
 
   return (

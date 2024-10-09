@@ -1,7 +1,6 @@
 import { ToastService } from "#shared/service/Toast.service";
 import { Logger } from "#shared/service/logger.service";
 import { useSignIn } from "@clerk/clerk-expo";
-import { useSignUp } from "@clerk/clerk-react";
 import {
   GoogleSigninButton,
   statusCodes,
@@ -10,7 +9,6 @@ import { useTranslation } from "react-i18next";
 
 export const GoogleButton = () => {
   const { signIn } = useSignIn();
-  const { signUp } = useSignUp();
   const { t } = useTranslation("common");
 
   return (
@@ -23,8 +21,8 @@ export const GoogleButton = () => {
             strategy: "oauth_google",
             redirectUrl: "https://accounts.fitrat.fr/sign-in/",
           });
+          //eslint-disable-next-line
         } catch (error: any) {
-          console.log(error);
           if (error.code === statusCodes.SIGN_IN_CANCELLED) {
             Logger.info("Google sign in cancelled");
           }
